@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <!--文本显示框-->
+    <TextView
+            android:id="@+id/testText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试文字！测试文字！"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+    />
+
+    <!--改变文本颜色的按钮布局-->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!--表明按钮类型属颜色-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色"
+                android:layout_marginLeft="10sp"
+                android:textSize="22sp"/>
+
+        <!--将文本颜色变为红色的按钮-->
+        <Button
+                android:id="@+id/btnRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红色"
+                android:layout_marginLeft="10sp"
+                android:textColor="#e64444" />
+
+        <!--将文本颜色变为绿色的按钮-->
+
+        <!--将文本颜色变为蓝色的按钮-->
+        <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色"
+                android:layout_marginLeft="10sp"
+                android:textColor="#6ec448"/>
+        <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色"
+                android:layout_marginLeft="10sp"
+                android:textColor="#39c6ca"/>
+
+    </LinearLayout>
+
+
+    <!--改变文本大小的按钮布局-->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!--表明按钮类型属字体大小-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大小"
+                android:layout_marginLeft="10sp"
+                android:textSize="22sp"/>
+
+        <!--增大文本字体大小的按钮-->
+        <Button
+                android:id="@+id/btnBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增大"
+                android:layout_marginLeft="10sp"
+                android:textColor="#e64444" />
+
+        <!--减小文本字体大小的按钮-->
+        <Button
+                android:id="@+id/btnSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减小"
+                android:layout_marginLeft="10sp"
+                android:textColor="#6ec448" />
+
+        <!--使文本字体大小还原为默认大小的按钮-->
+        <Button
+                android:id="@+id/btnDefault1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认"
+                android:layout_marginLeft="10sp"
+                android:textColor="#39c6ca" />
+
+    </LinearLayout>
+
+    <!--改变文本大小的按钮线性布局-->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!--表明按钮类型属字体样式-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="样式"
+                android:layout_marginLeft="10sp"
+                android:textSize="22sp" />
+
+        <!--加粗文本字体的按钮-->
+        <Button
+                android:id="@+id/btnBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加粗"
+                android:layout_marginLeft="10sp"
+                android:textColor="#e64444" />
+
+        <!--倾斜文本字体的按钮-->
+        <Button
+                android:id="@+id/btnTilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倾斜"
+                android:layout_marginLeft="10sp"
+                android:textColor="#6ec448" />
+
+        <!--将文本字体还原为默认的按钮-->
+        <Button
+                android:id="@+id/btnDefault2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认"
+                android:layout_marginLeft="10sp"
+                android:textColor="#39c6ca" />
+
+    </LinearLayout>
+    <!--改变文本内容的输入框线性布局-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!--表明输入框属性-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textSize="22sp"/>
+
+        <!--文本输入框-->
+        <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请在此输入信息"/>
+
+    </LinearLayout>
+
+</LinearLayout>
